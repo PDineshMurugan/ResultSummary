@@ -1,0 +1,197 @@
+*{
+  font-family: "Hanken Grotesk", sans-serif;
+  max-width: 1200px;
+}
+.main-container{
+  width: auto; 
+  height: auto; 
+  background-color: #ffffff; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 7%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.5), 
+  0 -15px 15px -15px rgba(0, 0, 0, 0.5), 
+  15px 0 15px -15px rgba(0, 0, 0, 0.5), 
+  -15px 0 15px -15px rgba(0, 0, 0, 0.5);
+
+}
+.blue-container{
+    padding: 50px;
+width: 200px;
+border-radius: 7%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+color: rgb(200, 200, 200);
+
+    background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+.result{
+  font-weight: 800;
+  display: flex;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+.circle{
+  cursor: pointer;
+  padding:3px 50px;
+  border-radius: 50%;
+  background-image:linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+}
+.circle h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease
+}
+.circle p{
+  color: rgb(170, 170, 170);
+  display: flex;
+  
+  justify-content: center;
+}
+.great{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+
+}
+.summary{
+display: inline;
+}
+.side-container{
+  width: 300px;
+  padding-left: 20px;
+}
+.side-container p{
+ font-weight: bold;
+}
+.reaction{
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  margin: 5px;
+  background: rgb(255, 223, 223);
+  color:hsl(0, 100%, 67%);
+  font-weight: bold;
+}
+.reaction img{
+  vertical-align: middle;
+}
+.memory{
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  margin: 5px;
+  background: lightgoldenrodyellow;
+  color: hsl(39, 100%, 56%);
+  font-weight: bold;
+}
+.memory img{
+  vertical-align: middle;
+}
+.verbal{
+  border-radius: 12px;
+  padding: 15px;
+  margin: 5px;
+
+  width: 220px;
+  background: rgb(227, 255, 216);
+  color: hsl(166, 100%, 37%);
+  font-weight: bold;
+}
+.verbal img{
+  vertical-align: middle;
+}
+.visual{
+  border-radius: 12px;
+  padding: 15px;
+  margin: 5px;
+  width: 220px;
+  background: hsl(221, 100%, 96%);
+  color: hsl(234, 85%, 45%);
+  font-weight: bold;
+}
+.visual img{
+  vertical-align: middle;
+}
+button{
+ 
+  padding: 15px;
+  margin-left: 30px;
+  width: 200px;
+  border-radius: 25px;
+  background-color:hsl(224, 30%, 27%);
+  cursor: pointer;
+  color: white;
+  border:none;
+}
+button:hover{
+  transform: scale(1.1); 
+  transition: 0.3s;
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.5), 
+  0 -15px 15px -15px rgba(0, 0, 0, 0.5), 
+  15px 0 15px -15px rgba(0, 0, 0, 0.5), 
+  -15px 0 15px -15px rgba(0, 0, 0, 0.5);
+}
+
+.circle:hover{
+  box-shadow: 0 15px 15px -15px rgb(255, 255, 255), 
+  0 -15px 15px -15px rgb(255, 255, 255)
+  15px 0 15px -15px rgb(255, 255, 255), 
+  -15px 0 15px -15px rgb(255, 255, 255);
+
+}
+
+@media only screen and (max-width: 600px){
+  *{
+    max-width: 500px;
+  }
+  .main-container{
+    max-width: 450px;
+    left: 255px;
+    margin: 0;
+  }
+ .side-container{
+  max-width: 100%;
+ }
+ .blue-container{
+  margin: 0;
+  
+ }
+ .circle{
+  width: 40%;
+ }
+ .reaction{
+  width: 75%;
+  font-size: 14px;
+ }
+ .memory{
+  width: 75%;
+  font-size: 14px;
+
+ }
+ .verbal{
+  width: 75%;
+  font-size: 14px;
+ }
+ .visual{
+  width: 75%;
+  font-size: 14px;
+ }
+ button{
+  width: 90%;
+  margin: 0;
+ }
+}
