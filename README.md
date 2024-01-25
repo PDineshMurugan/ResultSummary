@@ -6,6 +6,10 @@ This repository contains the code for a result summary task, showcasing a respon
 
 The result summary task is designed to display a user's scores and category details in an aesthetically pleasing way. The project uses HTML for structuring the content and CSS for styling, ensuring a clean and responsive user interface.
 
+## Live Demo
+
+Check out the live demo [here](https://pdineshmurugan.github.io/ResultSummary/results-summary-component-main/).
+
 ## Technologies Used
 
 - HTML
